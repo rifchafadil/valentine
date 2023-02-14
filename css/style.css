@@ -21,7 +21,7 @@
 
 .hero {
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .hero .title {
@@ -149,4 +149,53 @@
 
 .loader.loader-active {
 	display: none;
+}
+
+@media screen and (max-width: 566px) {
+	.hero {
+		width: 100%;
+		height: 100vh;
+	}
+
+	.hero .title {
+		font-size: 1.8rem;
+		text-align: center;
+		padding-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.hero .about-box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.hero .about-box .box:nth-child(1) img {
+		width: 175px;
+		margin-inline: auto;
+		display: block;
+	}
+
+	.hero .about-box .box:nth-child(2) {
+		text-align: center;
+		padding: 0;
+	}
+
+	.hero .about-box .box:nth-child(2) h1 {
+		font-size: 20px;
+		text-align: center;
+		padding-top: 20px;
+	}
+
+	.hero .about-box .box .desc {
+		font-size: 14px;
+		line-height: normal;
+		margin-bottom: 15px;
+		text-align: justify;
+	}
+
+	.loader img {
+		width: 150px;
+		height: 150px;
+	}
 }
